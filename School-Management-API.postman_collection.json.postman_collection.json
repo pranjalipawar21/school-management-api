@@ -1,0 +1,74 @@
+{
+  "info": {
+    "_postman_id": "2ce04daf-142a-4e55-9100-069506afc93d",
+    "name": "School-Management-API.postman_collection.json",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54125956",
+    "_collection_link": "https://go.postman.co/collection/54125956-2ce04daf-142a-4e55-9100-069506afc93d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:5000/addSchool",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Green Valley School\",\r\n  \"address\": \"Baner, Pune\",\r\n  \"latitude\": 18.559,\r\n  \"longitude\": 73.7868\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/addSchool",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/listSchools",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/listSchools?latitude=18.5204&longitude=73.8567",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "18.5204"
+            },
+            {
+              "key": "longitude",
+              "value": "73.8567"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
